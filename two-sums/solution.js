@@ -1,0 +1,1 @@
+var twoSum=function(t,r){if(t[0]+t[1]===r)return[0,1];let e={[t[0]]:0,[t[1]]:1};for(let n=2,u=t.length-1;n<t.length;n++,u--){if(n!==u&&t[n]+t[u]==r)return[n,u];let f=e[r-t[n]];if(f>=0)return[f,n];e[t[n]]=n;let l=e[r-t[u]];if(l>=0)return[u,l];e[t[u]]=u}return[]};
